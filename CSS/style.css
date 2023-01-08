@@ -1,0 +1,360 @@
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    background-color: #EDF2EC;
+}
+.container {
+    background-color: #EDF2EC;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+html {
+    scroll-behavior: smooth; 
+}
+.logo p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 109px;
+    font-size: 16px;
+    line-height: 21px;
+    
+}
+.nav ul{
+    padding: 0;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 46px;
+}
+.nav-item a {
+    color: #000000;
+    text-decoration: none;  
+    transition: color 0.5s;
+    font-size: 16px;
+}
+.nav-item a:hover {
+    color: #E06733;
+    font-weight: 700;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+.header-nav{    
+    height: 134px;
+    margin: 42px auto;
+}
+.logo img{
+    width: 20px;
+    margin-right: 3px;
+}
+section{
+    padding: 0 109px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.welcome{
+    margin-top: 60px;
+}
+.welcome img{
+    width: 448.8px;
+    margin-top: -35px;
+}
+.welcome-text{
+    max-width: 549px;
+}
+.welcome-text p{
+    margin: 40px 0 42px; 
+}
+h1{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+    margin: 0;
+}
+.text-green{
+    color: #499A18;
+}
+p{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+    
+}
+.button{
+    width: 158px;
+    height: 44px;
+    border: 2px solid #E06733;
+    border-radius: 10px;  
+    background-color: rgba(255, 255, 255, 0);
+    color:#E06733;
+    font-size: 20px;
+    line-height: 26px ;
+}
+.welcome-text .button{
+    color: #000000;
+    font-size: 16px;
+    line-height: 20px;  
+    margin-top: 5px;
+    margin-bottom: 94px;
+}
+section .welcome{
+    align-items: center;
+}
+.about img{
+    width: 464px;
+    margin: 93px 0 94px;
+}
+.about-text{
+    max-width: 605px;
+    margin-top: 135px;
+    
+}
+h2{
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+.about-text h2{
+    max-width: 462px;
+}
+.text-orange{
+    color: #E06733;
+}
+.about{
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+.service-text{
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+
+}
+.service-text .button{
+    width: 161px;
+    height: 50px;
+    margin-top: -20px;
+}
+.button:hover {
+    cursor: pointer;
+    background: #E47209;  
+    color: #FFFFFF;
+    transition: color 0.5s;
+}
+.service-text h2{
+    max-width: 306px;
+    margin-bottom: 90px;
+    margin-top: 50px;
+}
+.buttons{
+    width: 559px;
+    display: flex;
+    gap: 38px;
+    margin-left: 142px;
+}
+.service{
+    display: block;
+}
+.cards-all{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 55px 111px;
+    margin-bottom: 121px;
+}
+.card{
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    max-width: 330px;
+    filter: blur(2px);
+}
+.card:hover{
+    filter: none;
+}    
+h3{
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+    text-align: center;
+    margin: 10px 0;
+}
+.card p{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+.prices{
+    display: flex;
+    justify-content: space-between;    
+    background: #FFFFFF;
+    margin-top: -25px;
+}
+.price h2{
+    font-weight: 700;
+    line-height: 48px;
+    color: #000000;
+    margin: 38px 0 60px;
+    
+}
+.contact{
+    max-width: 452px;
+    text-align: right;
+    
+}
+.contact h2{
+    color: #000000;
+    line-height: 50px;
+    font-weight: 700;
+    margin-top: 38px;
+}
+
+.contact-button{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
+.contact-button img{
+    margin: 39px 0 115px;   
+}
+.active, .collapsible:hover {
+    background-color: #D6E7D2;
+    
+}
+.collapsible{    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: center;
+    outline: none;
+    width: 250px;    
+    border-radius: 20px;
+    margin: 16px 41px;
+}
+.content {
+    padding: 0 ;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #D6E7D2;
+    height: 154px;
+    width: 250px;
+    margin: -16px 41px 16px;  
+    border-radius: 20px;
+}
+.content p{
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+    padding: 6px 41px;  
+}
+.content .text-orange{
+    padding-left: 41px; 
+    font-size: 16px;
+}
+.collapsible:after {
+    content: url(../assets/img/active.svg);
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;    
+}
+.active:after {
+    content: url(../assets/img/anactive.svg);   
+}
+.prices-list{
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    margin-bottom: 129px;
+}
+.order{
+    width: 86px;
+    height: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin: 0 0 12px 39px;
+}
+select{
+    width: 450px;
+    height: 50px;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    border: none;
+    margin-top: 148px;
+    padding: 0 20px;
+    appearance: none;
+    cursor: pointer;
+}
+.contacts img{
+    max-width: 400px;
+    margin: 53px 0 40px;
+}
+.contacts{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.contacts h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin: 60px 64px 0 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 109px;
+    background-color: #FFFFFF;
+    max-width: 1440px;
+    margin: -55px auto 0;
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+
+}
+.contacts-item a{
+    color: #000000;
+    text-decoration: none;  
+    transition: color 0.5s;
+    font-size: 16px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.contacts-item a:hover {
+    color: #E06733;
+    font-weight: 700;
+}
