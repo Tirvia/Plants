@@ -15,6 +15,7 @@ html {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
+    font-family: 'Inika';
 }
 .nav{
     display: flex;
@@ -151,9 +152,11 @@ h2{
 
 }
 .service-text .button{
-    width: 161px;
+    max-width: 161px;
     height: 50px;
     margin-top: -20px;
+    margin-left: 3px;
+    border-radius: 5px;
 }
 .button:hover {
     cursor: pointer;
@@ -176,16 +179,18 @@ h2{
     display: block;
 }
 .cards-all{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 55px 111px;
-    margin-bottom: 121px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 66px;
+    max-width: 1220px;
 }
 .card{
     border: 1px solid #E3E1D5;
     border-radius: 20px;
     max-width: 330px;
     filter: blur(2px);
+    margin-bottom: 55px;
 }
 .card:hover{
     filter: none;
@@ -211,6 +216,7 @@ h3{
 }
 
 .price h2{
+    font-family: 'Inter';
     font-weight: 700;
     line-height: 48px;
     color: #000000;
@@ -223,6 +229,7 @@ h3{
     
 }
 .contact h2{
+    font-family: 'Inter';
     color: #000000;
     line-height: 50px;
     font-weight: 700;
@@ -232,7 +239,8 @@ h3{
 .contact-button{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;    
+    align-items: flex-end;     
+    border-radius: 5px;   
 }
 .contact-button .button{
     width: 162px;
@@ -247,6 +255,8 @@ h3{
     
 }
 .collapsible{    
+    font-family: 'Inter';
+    background: #EDF2EC;
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
@@ -326,7 +336,7 @@ select{
     cursor: pointer;
     background: #D6E7D2 url(../assets/img/activeCity.svg) no-repeat right 35px center;
 }
-.select:after {
+select:after {
     background: #D6E7D2 url(../assets/img/anactiveCity.svg) no-repeat right 35px center;
 }
 .contacts img{
@@ -378,4 +388,172 @@ select{
 }
 .media .nav-list{
     margin-right: 20px;
+}
+@media (max-width: 1200px){
+    select{
+        width: 230px;
+    }
+    .about img {
+        width: 350px;
+    }
+}
+@media (max-width: 1080px){
+    .buttons{
+        flex-direction: column;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media (max-width: 960px){
+    .contacts{
+        display: block;
+    }
+   
+    img{
+        max-width: 280px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    section{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 768px){
+    .nav{
+        margin: 0 50px;
+    }
+    .welcome{
+        flex-direction: row-reverse;
+        margin: 0;
+    }
+    h1{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .welcome-text p{
+        max-width: 341px ;
+        margin: 31px 0 30px 7px; 
+    }
+    .welcome img{
+        margin: 0;
+    }
+    .header-nav{
+        height: auto;
+        margin-bottom: 71px;
+    }
+    .welcome-text .button{
+        margin-bottom: 70px;
+    }
+    .about-text{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .about-text h2{
+        text-align: center;
+        font-size: 35px;
+        line-height: 46px;
+        margin-top: 41px;
+    }
+    .about-text p{
+        font-size: 20px;
+        line-height: 30px;
+        width: 668px;
+    }
+    .about img{
+        margin: 40px 0 95px;
+        width: 250px;
+    }
+    .service-text h2{
+        font-size: 35px;
+        line-height: 46px;
+        width: 306px;
+        margin: 78px 0 61px;
+    }
+    .service-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .buttons{
+        flex-direction: row;
+        margin: 0 0 40px;
+    }
+    .card{
+        margin-bottom: 38px;
+    }
+    .card img{
+        height: 350px;
+        width: 280px;
+        margin-bottom: -5px;
+    }
+    .card p{
+        width: 200px;
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+    .price h2{
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 42px;
+        margin-top: 28px;
+        margin-left: 15px;
+    }
+    .contact h2{
+        font-size: 25px;
+        line-height: 35px;
+        text-align: right;
+        margin-top: 128px;
+        margin-bottom: 29px;
+    }
+    .contacts-all{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    select{
+        margin: 100px 0 250px;
+        width: 450px;
+    }
+    .contacts-all img{
+        width: 200px;
+        margin-bottom: 33px;
+        margin-left: 22px;
+    }
+    .footer .nav-list{
+        margin-top: 0; 
+        margin-bottom: 0;
+    }
+    .footer{
+        margin-left: 10px;
+    }
+    .contacts-item a{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .price-button {
+        margin-left: 23px;
+    }
+    .contacts h2{
+        margin: -5px 1px 0 0;
+    }
+    .contacts-item img{
+        margin-top: 10px;
+    }
+    .date-github{
+        margin-bottom: -10px;
+    }
+
 }
