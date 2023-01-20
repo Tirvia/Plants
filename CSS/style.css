@@ -11,6 +11,34 @@ body{
 html {
     scroll-behavior: smooth; 
 }
+.menu-btn {
+	width: 30px;
+	height: 30px;
+	position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 20px;
+    display: none;
+}
+.menu-btn span {
+	width: 40px;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 8px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 8px);
+}
+.menu-btn span:nth-of-type(4) {
+	top: calc(50% - 16px);
+}
 .logo p{
     font-weight: 400;
     font-size: 16px;
@@ -250,7 +278,7 @@ h3{
 .contact-button img{
     margin: 39px 0 115px;   
 }
-.active, .collapsible:hover {
+.collapsible.active, .collapsible:hover {
     background-color: #D6E7D2;
     
 }
@@ -299,7 +327,7 @@ h3{
     float: right;
     margin-left: 5px;    
 }
-.active:after {
+.collapsible.active:after {
     content: url(../assets/img/anactive.svg);   
 }
 .prices-list{
@@ -555,5 +583,225 @@ select:after {
     .date-github{
         margin-bottom: -10px;
     }
-
+}
+@media (max-width: 680px){
+    .nav-all{
+        display: flex;
+    }
+    .logo{
+        flex-direction: row;
+        align-items: center;
+        margin-top: 8px;
+    }
+    .welcome{
+        flex-direction: column;
+    }
+    .cards-all{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-button img{
+        display: none;
+    }
+    .prices{
+        flex-direction: column;
+        align-items: center;
+    }
+    .prices-list{
+        margin:  0 auto;
+    }
+    .contact h2{
+        margin: 19px auto 24px;
+        width: 280px;
+        text-align: center;
+    }
+    .price h2{
+        text-align: center;
+    }
+    .contact-button  {
+        margin-bottom: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacts h2{
+        margin-top: 25px;
+    }
+    .about-text p{
+        width: 80%
+    }
+    .menu-btn{
+        display: flex;
+    }
+    
+    .menu-btn.active span:nth-of-type(1) {
+        display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);  
+    }
+    .menu-btn.active span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg); 
+    }
+    .menu-btn.active span:nth-of-type(4) {
+        display: none;
+    }
+    .menu.active {
+        transform: translateX(0);
+    }
+    .nav .nav-list{
+        height: 0px;        
+        overflow: hidden;
+    }
+    .nav .nav-list.active{
+        display: grid;
+        max-height: 150px;
+        gap: 10px;
+        height: auto;
+        transition: max-height 1.5s;
+    }
+    .buttons{
+        width: 252px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .button{
+        width: 121px;
+    }
+    .select{
+        width: 300px;
+    }
+    .footer div.contacts-item {
+        width: 210px;
+    }
+}
+@media (max-width: 390px){
+    .nav-item{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    .welcome img{
+        display: none;
+    }
+    .header-nav{
+        margin: 20px 11px 46px 22px;
+    }
+    .nav{
+        margin: 0;
+    }
+    section{
+        padding: 0 25px;
+    }
+    h1{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .welcome-text p{
+        margin: 20px 0 30px -1px;
+    }
+    .welcome-text .button{
+        font-size: 10px;
+        line-height: 20px;
+        width: 100px;
+        margin-bottom: 23px;
+        margin-top: -12px;
+        height: 34px;
+    }
+    .about-text h2{
+        font-size: 25px;
+        line-height: 33px;
+        margin-top: 30px;
+        margin-bottom: -2px;
+    }
+    .about-text p{
+        font-size: 15px;
+        line-height: 25px;
+        width: 100%;
+    }
+    .about img{
+        width: 150px;
+        margin: -15px 0 36px;
+    }
+    .service-text h2{
+        font-size: 25px;
+        line-height: 33px;
+        margin: 30px 0 58px;
+        width: 187px;
+    }
+    .service-text .button {
+        width: 121px;
+        height: 35px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: -6px;
+    }
+    .buttons{
+        gap: 32px 10px;
+    }
+    .cards-all{
+        padding: 0;
+    }
+    .card p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        width: 201px;
+    }
+    .card {
+        margin-bottom: 32px;
+    }
+    .price h2{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        margin: 48px 0 40px;
+    }
+    .prices-list{
+        width: 224px;
+        height: 235px;
+    }
+    .price-button{
+        margin: 0;
+    }
+    .price-button .collapsible{
+        width: 180px;
+        margin: 22px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .content{
+        margin: 0;
+        width: 180px;
+        height: 180px;
+        margin-left: 22px;
+        margin-top: -32px;
+    }
+    .contact h2{
+        font-size: 20px;
+        line-height: 35px;
+        font-weight: 700;
+        margin: 14px auto 20px;
+    }
+    .contact-button .button{
+        width: 121px;
+        height: 35px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .contacts h2{
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .select{
+        margin: 80px 0 132px;
+    }
+    .contacts-all img{
+        width: 100px;
+        margin-bottom: 22px;
+        margin-left: 0;
+    }
 }
