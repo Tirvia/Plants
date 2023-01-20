@@ -651,15 +651,11 @@ select:after {
         transform: translateX(0);
     }
     .nav .nav-list{
-        height: 0px;        
-        overflow: hidden;
+        display: none;
     }
     .nav .nav-list.active{
         display: grid;
-        max-height: 150px;
         gap: 10px;
-        height: auto;
-        transition: max-height 1.5s;
     }
     .buttons{
         width: 252px;
