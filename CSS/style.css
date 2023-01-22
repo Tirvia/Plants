@@ -390,7 +390,7 @@ select:after {
     padding: 40px 109px;
     background-color: #FFFFFF;
     max-width: 1440px;
-    margin: -55px auto 0;
+    margin: 0 auto ;
     font-weight: 400;
     font-weight: 400;
     font-size: 20px;
@@ -565,7 +565,7 @@ select:after {
         margin-bottom: 0;
     }
     .footer{
-        margin-left: 10px;
+        margin: -34px 0 0 10px;
     }
     .contacts-item a{
         font-size: 20px;
@@ -799,5 +799,8 @@ select:after {
         width: 100px;
         margin-bottom: 22px;
         margin-left: 0;
+    }
+    .footer{
+        margin-top: -22px;
     }
 }
