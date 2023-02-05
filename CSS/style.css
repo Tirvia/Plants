@@ -186,7 +186,7 @@ h2{
     margin-left: 3px;
     border-radius: 5px;
 }
-.button:hover {
+.button:hover, .button.active {
     cursor: pointer;
     background: #E47209;  
     color: #FFFFFF;
@@ -220,7 +220,8 @@ h2{
     filter: blur(2px);
     margin-bottom: 55px;
 }
-.card:hover{
+
+.card.active{
     filter: none;
 }    
 h3{
