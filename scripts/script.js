@@ -45,3 +45,59 @@ buttons3.addEventListener('click', function(){
   but4.classList.toggle('active');
   but6.classList.toggle('active');
 });
+
+var select = document.querySelector('.select');
+select.addEventListener('click', function(){
+  select.classList.toggle('active');
+  var value;
+  value = select.value;
+  
+})
+opt1 = document.getElementById("1");
+opt2 = document.getElementById("2");
+opt3 = document.getElementById("3");
+opt4 = document.getElementById("4");
+
+function getSelectValue(e){
+  let selectedValue = e.target.value;
+  
+  switch(selectedValue) {
+    case '0':
+      opt1.classList.remove('active');
+      opt2.classList.remove('active');
+      opt3.classList.remove('active');
+      opt4.classList.remove('active');
+      break;
+    case '1':
+      opt1.classList.toggle('active');
+      opt2.classList.remove('active');
+      opt3.classList.remove('active');
+      opt4.classList.remove('active');
+      break;
+    case '2':
+      opt2.classList.toggle('active');
+      opt1.classList.remove('active');
+      opt3.classList.remove('active');
+      opt4.classList.remove('active');
+      break;
+    case '3':
+      opt3.classList.toggle('active');
+      opt2.classList.remove('active');
+      opt1.classList.remove('active');
+      opt4.classList.remove('active');
+      break;
+    case '4':
+      opt4.classList.toggle('active');
+      opt2.classList.remove('active');
+      opt3.classList.remove('active');
+      opt1.classList.remove('active');
+      break;
+  }
+
+}
+
+const list = document.querySelector('.select');
+
+list.addEventListener('change', function(e) {  
+  getSelectValue(e)
+});
