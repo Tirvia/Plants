@@ -186,7 +186,7 @@ h2{
     margin-left: 3px;
     border-radius: 5px;
 }
-.button:hover {
+.button:hover, .button.active {
     cursor: pointer;
     background: #E47209;  
     color: #FFFFFF;
@@ -220,7 +220,8 @@ h2{
     filter: blur(2px);
     margin-bottom: 55px;
 }
-.card:hover{
+
+.card.active{
     filter: none;
 }    
 h3{
@@ -282,6 +283,13 @@ h3{
     background-color: #D6E7D2;
     
 }
+.collapsible.active{
+    border-radius: 0px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 16px 40px 0px;
+
+}
 .collapsible{    
     font-family: 'Inter';
     background: #EDF2EC;
@@ -298,6 +306,9 @@ h3{
     border-radius: 20px;
     margin: 16px 41px;
 }
+.content h5{
+    margin: -4px 0 12px;
+}
 .content {
     padding: 0 ;
     max-height: 0;
@@ -307,7 +318,8 @@ h3{
     height: 154px;
     width: 250px;
     margin: -16px 41px 16px;  
-    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .content p{
     font-weight: 300;
@@ -346,6 +358,7 @@ h3{
     background: #FFFFFF;
     border-radius: 10px;
     margin: 0 0 12px 39px;
+    cursor: pointer;
 }
 select{
     width: 450px;
@@ -364,8 +377,71 @@ select{
     cursor: pointer;
     background: #D6E7D2 url(../assets/img/activeCity.svg) no-repeat right 35px center;
 }
-select:after {
-    background: #D6E7D2 url(../assets/img/anactiveCity.svg) no-repeat right 35px center;
+select.active {
+    background:  #C1E698 url(../assets/img/anactiveCity.svg) no-repeat right 35px center;
+    border: 1px solid #D6E7D2;
+}
+.select option{
+    background: #D6E7D2;
+    color: #499A18;
+}
+.select > option:nth-child(1) {
+    color: #717171;
+    border-bottom:  1px solid #717171;
+}
+.select-all{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+option:hover {
+    color: #717171;
+    background: #D6E7D2;
+    border-bottom: 1px solid #717171;
+}
+.adress-number{
+    display: flex;
+    font-size: 16px;
+    line-height: 40px;
+}
+.adress-left{
+    color: #000000;
+    margin: 17px 0 24px 33px;
+    text-align: left;
+    letter-spacing: 0.05em;
+}
+
+.adress-right{
+    letter-spacing: 0.05em;
+    color: #717171;
+    margin: 17px 0 24px 16px;
+}
+.adress{
+    width: 448px;
+    height: 214px;
+    background: #EDF2EC;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-top: 50px;
+    display: none;
+}
+.adress.active{
+    display: block;
+}
+.adress .button{
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #717171; 
+    width: 122px;
+    height: 26px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    margin-left: 162px;
+}
+.adress h5{
+    margin: 0   ;
 }
 .contacts img{
     max-width: 400px;
@@ -774,6 +850,7 @@ select:after {
         margin-left: 22px;
         margin-top: -32px;
     }
+    
     .contact h2{
         font-size: 20px;
         line-height: 35px;
